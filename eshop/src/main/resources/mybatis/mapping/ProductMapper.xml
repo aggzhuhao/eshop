@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhuhao.eshop.mapper.ProductMapper" >
+  <resultMap id="productMap" type="com.zhuhao.eshop.entity.Product" >
+    <id column="product_id" property="productId" jdbcType="INTEGER" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="REAL" />
+    <result column="dicount" property="dicount" jdbcType="INTEGER" />
+    <result column="feature" property="feature" jdbcType="VARCHAR" />
+    <result column="imgpath" property="imgpath" jdbcType="VARCHAR" />
+    <result column="novalty_status" property="novaltyStatus" jdbcType="INTEGER" />
+    <result column="category_id" property="categoryId" jdbcType="INTEGER" />
+    <result column="date" property="date" jdbcType="DATE" />
+  </resultMap>
+  <select id="selectAllProduct" resultMap="productMap">
+    SELECT * FROM product
+  </select>
+
+  <select id="selectProductLimit" resultMap="productMap">
+    SELECT * FROM PRODUCT LIMIT 0,1
+  </select>
+
+  <select id="selectProductById" resultMap="productMap" parameterType="com.zhuhao.eshop.entity.Product">
+  SELECT * FROM PRODUCT WHERE product_id = #{productId}
+  </select>
+
+  <select id="selectlikeProduct" resultMap="productMap" parameterType="string">
+      SELECT * FROM PRODUCT WHERE description like concat(concat('%',#{description}),'%')
+  </select>
+
+</mapper>

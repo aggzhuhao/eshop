@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文章页</title>
+    <link  type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" data-main="js/main" src="js/require.js"></script>
+</head>
+<body>
+<div class="top">
+<div class="container">
+ <div class="pull-left top-text">
+     <span>Hi～亲爱的会员</span>
+     <a href="#">登录</a>
+     <a href="#">注册</a>
+ </div>
+  <div class="pull-right user-info">
+      <div class="top-group">
+          <a href="#">我的账户 <i class="icon-angle-down"></i></a>
+          <div class="user-menu">
+              <a href="#">收货地址</a>
+              <a href="#">会员中心</a>
+          </div>
+      </div>
+      <div class="top-group"><a href="#"><i class="icon-reorder"></i>我的订单</a></div>
+      <div class="top-group"><a href="#"><i class="icon-star-empty"></i>我的收藏</a></div>
+      <div class="top-group"><a href="#"><i class="icon-shopping-cart"></i>购物车</a></div>
+  </div>
+</div>
+</div>
+<div class="header">
+  <div class="container">
+  <div class="logo pull-left">
+      <a href="#">
+          <img src="images/logo.png" width="250px" height="100px" >
+      </a>
+  </div>
+  <div class="nav-menu pull-left">
+      <ul class="nav navbar-nav">
+          <li ><a href="#">首页</a></li>
+          <li ><a href="#">每周新品预售</a></li>
+          <li ><a href="#">衣帽间</a></li>
+          <li><a href="#">团购</a></li>
+          <li><a href="#">预约</a></li>
+          <li><a href="#">限时打折</a></li>
+      </ul>
+  </div>
+  <div class="nav-deck pull-right">
+    <a class="search" href="#"><i class="icon-search"></i></a>
+  </div>
+      <div class="search-frame">
+          <form action="" method="post">
+              <div class="search-btn"><a href="#"><i class="icon-search"></i></a></div>
+              <div><input  type="text" name="word" placeholder="搜索品牌、商品"></div>
+              <div class="search-close"><a href="#"><span aria-hidden="true">&times;</span></a></div>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="main">
+<div class="container">
+    <div class="content-text">
+        <div class="mark-title">
+              <h3 class="pull-left">帮助中心 INFO CENTER</h3><h3 class="pull-right">联系客服：400 821 25980</h3>
+        </div>
+        <div class="pull-left">
+            <div class="list-group">
+                <a href="#" class="list-group-item">注册新用户</a>
+                <a href="#" class="list-group-item">用户协议</a>
+                <a href="#" class="list-group-item">找回密码</a>
+                <a href="#" class="list-group-item">移动客户端下载</a>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">购物流程</a>
+                <a href="#" class="list-group-item">订单拆分</a>
+                <a href="#" class="list-group-item">积分使用说明</a>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">配送时间及范围</a>
+                <a href="#" class="list-group-item">配送费收取标准</a>
+                <a href="#" class="list-group-item">物流查询</a>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">发票制度</a>
+                <a href="#" class="list-group-item">支付方式</a>
+            </div>
+            <div class="list-group" style="border: none">
+                <a href="#" class="list-group-item">退货政策</a>
+                <a href="#" class="list-group-item">退货办理流程</a>
+                <a href="#" class="list-group-item">退款说明</a>
+            </div>
+        </div>
+        <div class="pull-right article-right">
+            <div class="article-title"><p>用户协议</p></div>
+            <div class="article-text">
+                <article>
+                <p>1、如果您需要开具普通发票，可在选购完商品后点击“立即购买”，在确认订单页面打开“发票”选项，选择“个人”或“公司”。如选择“公司”，需填写公司全称。</p>
+
+                <p>2、有范将会在您完成订单后尽快开具发票。原则上收货地址为江浙沪皖范围的订单，发票将随同货品一起邮寄，其他地区在收到包裹后七天左右单独发出。</p>
+
+                <p>3、如果您需要开具增值税发票，请您联系在线客服并提供相对应的公司委托您个人采购货物并付款的授权委托书（授权委托书需签署您的名字并加盖公司公章， </p>公司名称要求与增票抬头一致）、公司的营业执照复印件、税务登记证复印件、一般纳税人资格证明、开票资料等资料。客服在确认所有材料齐全合格后，会 尽快为您开具发票。原则上收货地址为江浙沪皖范围的订单，发票将随同货品一起邮寄，其他地区在收到包裹后七天左右单独发出。
+
+                4、注意事项：发票金额不能高于订单金额。非现金虚拟账户支付的金额和礼品卡、红包、支付的金额不开发票。（非现金虚拟账户如：有范的一些促销活动中 赠送客户范票的金额，已获得过有范的发票的金额。） 如：订单总金额为500元，使用范票支付100元，选择开具发票后，发票金额为400元，不包含100元范 票支付的金额。
+
+                5、补、换发票流程：如果您需要补开发票，请您先与在线客服联系，客服会在核对好订单后根据您提供的资料重新开具发票。补开的发票会在七日左右邮寄出 ，运费由客户承担。
+
+                6、如果您在收到发票后发现发票抬头、内容或金额等与下订单时所填写的项目不符，请先与客服联系确认后，将原发票退回，收到退回发票后七天左右， 新发票会以挂号信形式寄出。如果是由于客户原因需要更换发票，则运费由客户承担。
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+    <div class="footer-group pull-left">
+     <ul class="footer-list">
+         <li class="top-title"><span>新手指南</span></li>
+         <li><a href="#">注册新用户</a></li>
+         <li><a href="#">用户协议</a></li>
+         <li><a href="#">找回密码</a></li>
+         <li><a href="#">移动客户端下载</a></li>
+     </ul>
+     <ul class="footer-list">
+        <li class="top-title"><span>购物指南</span></li>
+        <li><a href="#">购物流程</a></li>
+        <li><a href="#">订单拆分</a></li>
+        <li><a href="#">积分使用说明</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="top-title"><span>配送方式</span></li>
+        <li><a href="#">配送时间及范围</a></li>
+        <li><a href="#">配送费收取标准</a></li>
+        <li><a href="#">物流查询</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="top-title"><span>支付方式</span></li>
+        <li><a href="#">发票制度</a></li>
+        <li><a href="#">支付方式</a></li>
+    </ul>
+    <ul class="footer-list">
+        <li class="top-title"><span>售后服务</span></li>
+        <li><a href="#">退货政策</a></li>
+        <li><a href="#">退货办理流程</a></li>
+        <li><a href="#">退款说明</a></li>
+    </ul>
+   </div>
+     <div class="footer-group pull-right">
+         <div class="contact">
+             <img src="images/contact.jpg">
+         </div>
+         <p>监督：021-38119999-6038</p>
+        <p> 在线客服</p>
+     </div>
+    <div class="copy-right">
+        <p><span>CopyRight © 2015-2016 funwear.com 沪ICP备05033127号</span></p>
+    </div>
+    </div>
+</div>
+<div class="sticky">
+    <div><a href="#" title="返回顶部"><i class="icon-angle-up"></i></a></div>
+</div>
+<!--置顶-->
+</body>
+</html>
